@@ -5,7 +5,7 @@ import translateRoute from './src/routes/translate.route.js';
 const app = express();
 
 app.use(bodyParser.json());
-app.use('/translate', translateRoute);
+app.use('/api', translateRoute);
 
 const PORT = process.env.PORT || 3000;
 
